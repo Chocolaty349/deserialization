@@ -1,13 +1,12 @@
 <?php
 class Person {
     public $name;
-    protected $age;
-    private $password;
+    public $age;
+    public $isAdmin = true;
 
-    public function __construct($name, $age, $password) {
+    public function __construct($name, $age) {
         $this->name = $name;
         $this->age = $age;
-        $this->password = $password;
     }
 
     public function display() {
@@ -15,8 +14,7 @@ class Person {
     }
 }
 
-$person = new Person("John Doe", 30, "secret");
+$person = new Person("John Doe", 30);
 
 $serialied_person = serialize($person);
 echo 'Serialized valuue: ' . $serialied_person;
-?>
