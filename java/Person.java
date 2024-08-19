@@ -4,12 +4,12 @@ public class Person implements Serializable {
     private static final long serialVersionUID = 1L;
     private String name;
     private int age;
-    private boolean isAdmin;
+    // private boolean isAdmin;
 
     public Person(String name, int age, boolean isAdmin) {
         this.name = name;
         this.age = age;
-        this.isAdmin = isAdmin;
+        // this.isAdmin = isAdmin;
     }
 
     public String getName() {
@@ -20,12 +20,12 @@ public class Person implements Serializable {
         return age;
     }
 
-    public boolean isAdmin() {
-        return isAdmin;
-    }
+    // public boolean isAdmin() {
+    //     return isAdmin;
+    // }
 
     @Override
     public String toString() {
-        return "Person{name='" + name + "', age=" + age + ", isAdmin=" + isAdmin + "}";
+        return "Person{name='" + name + "', age=" + age + "}";
     }
 }
