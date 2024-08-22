@@ -19,6 +19,8 @@
 *.tar.gz
 *.rar
 
+# lib directory
+libs/
 # serialized object file
 *.ser
 

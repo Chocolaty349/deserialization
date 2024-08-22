@@ -1,0 +1,8 @@
+{
+    "java.project.sourcePaths": [
+        "java"
+    ],
+    "java.project.referencedLibraries": [
+        "java/libs/commons-collections-3.1/commons-collections-3.1.jar"
+    ]
+}
