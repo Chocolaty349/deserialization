@@ -20,7 +20,7 @@ public class URLDNSdemo {
         try (FileInputStream fileIn = new FileInputStream(filename);
              ObjectInputStream in = new ObjectInputStream(fileIn)) {
 
-            Object duck = in.readObject(); // changed Duck to Object
+            Duck duck = (Duck) in.readObject();
             System.out.println("Deserialized Duck:");
 
         } catch (IOException | ClassNotFoundException e) {
